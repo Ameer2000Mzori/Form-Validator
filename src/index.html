@@ -16,17 +16,62 @@
         <h1>SING UP TODAY!</h1>
         <form action="submit" class="form">
           <label for="name">Full Name</label>
-          <input type="text" />
-          <label for="name">Phone Number</label>
-          <input type="email" />
+          <input
+            type="name"
+            id="name"
+            name="name"
+            required
+            title="Enter a valid name"
+            placeholder="full name"
+          />
+          <label for="Number">Phone Number</label>
+          <input
+            type="Number"
+            id="Number"
+            name="Number"
+            required
+            title="Enter a valid Number"
+            placeholder="a valid number"
+          />
           <label for="name">Email Adress</label>
-          <input type="text" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern=".+@.+"
+            title="Enter a valid email address"
+            placeholder="sample@gmail.com"
+          />
           <label for="name">Website URL</label>
-          <input type="text" />
-          <label for="name">Password</label>
-          <input type="text" />
-          <label for="name">Confirm Password</label>
-          <input type="text" />
+          <input
+            type="url"
+            id="url"
+            name="url"
+            required
+            title="Enter a valid URL"
+            placeholder="https://www.sample.com"
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder=" 8 char,1 uppercase letter, 1 symbol"
+            pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(.{8,})"
+            title="Password must have at least 8 characters, one uppercase letter, and one symbol"
+          />
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+            placeholder="confirm password"
+            pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(.{8,})"
+            title="Passwords must match"
+          />
           <div class="button-wrapper">
             <button class="register-btn">Register</button>
             <h3 class="updated-register-text">Don't Hesitate!</h3>

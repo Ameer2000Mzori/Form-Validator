@@ -76,6 +76,17 @@ body {
         box-shadow: 0 0 10px #719ece;
       }
 
+      input:valid {
+        border-width: 1px;
+        outline: none !important;
+        border-color: #7cce71;
+        box-shadow: 0 0 10px #81ce71; /* Change border color for valid state */
+      }
+
+      input:invalid {
+        border-color: #ff0000; /* Change border color for invalid state */
+      }
+
       .button-wrapper {
         font-family: "Lato", sans-serif;
         font-weight: 600;
