@@ -1,3 +1,5 @@
+import "./output.css";
+
 //getting our elements by ID's
 const nameInput = document.getElementById("name");
 const numberInput = document.getElementById("Number");
@@ -49,7 +51,7 @@ function checkPassword(e) {
     registerText.classList.add("active");
     registerText.textContent = "DATA SENT";
 
-    newData = [
+    const newData = [
       {
         Name: nameVal,
         number: numberVal,
@@ -59,9 +61,11 @@ function checkPassword(e) {
         passwordComfirm: passwordVal,
       },
     ];
+    let dataObj = JSON.parse(localStorage.getItem("dataObj")) || [];
+    console.log("our data before push", dataObj);
     dataObj.push(newData);
     localStorage.setItem("dataObj", JSON.stringify(dataObj));
-    console.log(dataObj);
+    console.log("our data after push : ", dataObj);
   }
 }
 
