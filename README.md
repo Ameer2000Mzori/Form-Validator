@@ -45,8 +45,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[multi-page responsive website]**
-- **[flex & grid]**
+- **[Webpack Build]**
+- **[Css & Scss]**
+- **[Desktop & Phone]**
+- **[Flex & Grid]**
+- **[Validation ]**
+- **[Local Storage ]**
+- **[Object Use ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
