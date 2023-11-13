@@ -104,6 +104,11 @@ body {
   border-color: black;
   cursor: pointer;
 }
+.header .form-wrap .form .button-wrapper .register-btn.active {
+  background-color: rgb(70, 68, 68);
+  color: white;
+  border-color: black;
+}
 .header .form-wrap .form .button-wrapper .updated-register-text {
   padding: 10px;
   font-size: 20px;
@@ -113,6 +118,10 @@ body {
   border-style: solid;
   border-color: black;
   width: 87%;
+}
+.header .form-wrap .form .button-wrapper .updated-register-text.active {
+  background-color: #7cce71;
+  border-color: #81ce71;
 }
 .header .form-wrap .form .button-wrapper .updated-register-text:hover {
   background-color: rgb(70, 68, 68);

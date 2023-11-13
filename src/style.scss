@@ -116,6 +116,12 @@ body {
           cursor: pointer;
         }
 
+        .register-btn.active {
+          background-color: rgb(70, 68, 68);
+          color: white;
+          border-color: black;
+        }
+
         .updated-register-text {
           padding: 10px;
           font-size: 20px;
@@ -125,6 +131,11 @@ body {
           border-style: solid;
           border-color: black;
           width: 87%;
+        }
+
+        .updated-register-text.active {
+          background-color: #7cce71;
+          border-color: #81ce71;
         }
 
         .updated-register-text:hover {
