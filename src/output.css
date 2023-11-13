@@ -1,6 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 body {
   padding: 0;
   margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: rgb(187, 183, 183);
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(187, 183, 183);
+}
+.header .form-wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 231, 231);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 630px;
+  width: 500px;
+  padding: 5px;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 0.75rem rgb(151, 147, 148));
+}
+.header .form-wrap .form {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 500px;
+  width: 90%;
+  gap: 10px;
+}
+.header .form-wrap .form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  align-items: start;
+  width: 90%;
+  gap: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+.header .form-wrap .form input {
+  width: 90%;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  border-width: 1px;
+  border-color: red;
+  box-shadow: 0 0 5px #ce7171;
+  outline: none !important;
+  border-style: solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+.header .form-wrap .form input:focus {
+  border-width: 1px;
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+.header .form-wrap .form .button-wrapper {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.header .form-wrap .form .button-wrapper .register-btn {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  width: 93%;
+}
+.header .form-wrap .form .button-wrapper .register-btn:hover {
+  background-color: rgb(70, 68, 68);
+  color: white;
+  border-color: black;
+  cursor: pointer;
+}
+.header .form-wrap .form .button-wrapper .updated-register-text {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  width: 87%;
+}
+.header .form-wrap .form .button-wrapper .updated-register-text:hover {
+  background-color: rgb(70, 68, 68);
+  color: white;
+  border-color: black;
+  cursor: pointer;
+}
+@media screen and (max-width: 769px) {
+  .header .form-wrap {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 231, 231);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 630px;
+    width: 280px;
+    padding: 5px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 0.75rem rgb(151, 147, 148));
+  }
+  .header .form-wrap .form {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
